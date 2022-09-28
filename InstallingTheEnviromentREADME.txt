@@ -42,4 +42,12 @@ USING GITHUB
                 git config -l --show-origin
 
     Step 4: Push Code From Visual Studio Code To GitHub
-        Inside the Source Control panel, click on the Overflow button with the ellipsis icon. Then, from the Pull, Push menu option, select Push to.
+        Inside the Source Control panel, click on the three-dot (ellipsis) icon. Select Pull, Push option from the list of options and then select "Push to" option.
+        On the right corner, you will be prompted to add a remote. Click on Add Remote button.
+        Next, on the top-center, a palette will appear. Paste the copied GitHub repository URL and press Enter.
+        Then, type any remote name and press Enter. I typed "First Remote"
+        Open the Push to sub-menu option again. Then, choose your repository path and press Enter.
+        A pop-up will appear to log in to GitHub. Choose which option you’ll use to sign – I’m using my browser.
+        An authorization page will pop up in the browser. Click on the GitCredentialManager button.
+        Enter your GitHub credentials
+        Finally, refresh your GitHub repository URL and you will notice that the codes are successfully pushed to GitHub from your local repository.
