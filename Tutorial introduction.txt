@@ -1,0 +1,9 @@
+FHIR stands for Fast Health Interoperability Standards and it is a standard for interoperability released by HL7 aka to exchange data.
+In FHIR health data is represented as resources and exchanged through multiple paradigms, one of which is a RESTful server.
+
+
+To add resources to FHIR HAPI server link: https://hapifhir.io/hapi-fhir/docs/server_jpa/configuration.html
+to look
+https://www.youtube.com/watch?v=pNprqpwGldE
+
+do hapi fhir server as rest https://hapifhir.io/hapi-fhir/docs/server_plain/
