@@ -7,3 +7,17 @@ to look
 https://www.youtube.com/watch?v=pNprqpwGldE
 
 do hapi fhir server as rest https://hapifhir.io/hapi-fhir/docs/server_plain/
+do I want https://fire.ly/products/firely-server/ https://server.fire.ly/
+
+https://github.com/cqframework/clinical_quality_language
+https://github.com/FirelyTeam/fhirstarters/tree/master/java/hapi-fhirstarters-client-skeleton/
+https://github.com/DBCG/cql-language-server
+
+https://code.visualstudio.com/docs
+https://docs.fire.ly/projects/Firely-NET-SDK/client/setup.html
+https://fire.ly/blog/make-your-first-fhir-client-within-one-hour/
+https://medblocks.org/2021-01-19-setting-up-vscode-for-fhir/
+https://medblocks.medium.com/setting-up-vscode-for-creating-fhir-resource-2cd5c101c548
+https://community.intersystems.com/post/simple-example-fhir-client-java
+
+udemy 
