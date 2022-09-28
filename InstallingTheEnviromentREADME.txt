@@ -23,7 +23,12 @@ USING GITHUB
     Step 2: Open An Existing Project With VS Code
         From the “Explorers” tab in the sidebar, click on the Open Folder button.
         Open the folder from your preferred directory and make sure all the code files are in one folder, as you’ll have to push your folder to GitHub.
-        
+
     Step 3: Commit The Code Files
+        Note: Make sure you configure your 'user.email' and 'user.name' in git" when trying to push to git. link: http://vcloud-lab.com/entries/powershell/solved-visual-studio-code-make-sure-you-configure-your-user-name-and-user-email-in-git
+            cd C:\Program Files\Git\bin
+            git config --global user.email "you@example.com"
+            git config --global user.name "Your Name"
+            git config -l --show-origin
 
     Step 4: Push Code From Visual Studio Code To GitHub
