@@ -25,10 +25,21 @@ USING GITHUB
         Open the folder from your preferred directory and make sure all the code files are in one folder, as you’ll have to push your folder to GitHub.
 
     Step 3: Commit The Code Files
-        Note: Make sure you configure your 'user.email' and 'user.name' in git" when trying to push to git. link: http://vcloud-lab.com/entries/powershell/solved-visual-studio-code-make-sure-you-configure-your-user-name-and-user-email-in-git
-            cd C:\Program Files\Git\bin
-            git config --global user.email "you@example.com"
-            git config --global user.name "Your Name"
-            git config -l --show-origin
+
+        Click on the Initialize Repository button from the “Source Control” tab in the sidebar.
+        Now, under the Source Control panel, enter any commit message. I’m going to type “First Commit.” 
+        Then, click on the ✓ icon next to Source Control heading or press Ctrl + Enter.
+        Click Yes on the prompt pop-up.
+
+        There may be a case that you receive a message saying something along the lines of: "Make sure you configure your 'user.email' and 'user.name' in git"
+        If so please follow these additional steps: link: http://vcloud-lab.com/entries/powershell/solved-visual-studio-code-make-sure-you-configure-your-user-name-and-user-email-in-git
+            in your command prompt navigate to the bin directory of you Git usually is: 
+                cd C:\Program Files\Git\bin
+            Now type your email and name like:
+                git config --global user.email "you@example.com"
+                git config --global user.name "Your Name"
+            You can check if those are set by going into your repository, and typing:
+                git config -l --show-origin
 
     Step 4: Push Code From Visual Studio Code To GitHub
+        Inside the Source Control panel, click on the Overflow button with the ellipsis icon. Then, from the Pull, Push menu option, select Push to.
