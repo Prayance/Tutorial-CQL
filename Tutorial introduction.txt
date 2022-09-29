@@ -21,3 +21,7 @@ https://medblocks.medium.com/setting-up-vscode-for-creating-fhir-resource-2cd5c1
 https://community.intersystems.com/post/simple-example-fhir-client-java
 
 udemy 
+
+
+CQL was initially developed as a quality indicator in US, outside of HL7 standards but soon was incorporated into HL7. Identifying quality indicators involved into something that can be used for healthcare decision support. In US there are a lot of defined sets of computable knowledge associated with CQL but are not part of it yet, around conditions and procedures that the US uses for monitoring. 
+We can develop those phenotypes and use them for decision support purposes rather than quality control purposes.
