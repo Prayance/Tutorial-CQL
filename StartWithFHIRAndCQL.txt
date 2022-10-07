@@ -6,7 +6,7 @@ https://cql-runner.dataphoria.org/
 This is the CQL runner engine that is freely available to use.
 
 Go to Config button and type:
-Patient Id: 5342998
+Patient Id: 5342998 (feel free to use any other patient ID)
 Source Data > Data Source URL: http://hapi.fhir.org/baseR4
 
 Leave the rest of the settings untouched. However, just in case something gets broken here are the correct settings (to date)
