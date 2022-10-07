@@ -1,0 +1,73 @@
+https://hapi.fhir.org/search?serverId=home_r4&pretty=true&_summary=&resource=Specimen&param.0.qualifier=&param.0.0=&param.0.1=&param.0.name=container&param.0.type=token&sort_by=&sort_direction=&resource-search-limit=
+
+
+VSCode
+build container&name it
+docker build . -t insert-name
+
+launch the container from the image
+docker run -p 4200:4200 -d insert-name
+
+if you want to run it from a different port you change to a different number. 
+once the container is running go to browser and add: 
+localhost:4200
+
+
+https://cql-runner.dataphoria.org/
+
+library CqlTypes version '2.0'
+
+using FHIR version '4.0.1' 
+
+codesystem "SNOMED": 'http://snomed.info/sct'
+codesystem "ICD-10-CM": 'urn:oid:2.16.840.1.113883.6.90'
+codesystem "CONDCLINSTATUS": 'http://terminology.hl7.org/CodeSystem/condition-clinical'
+codesystem "CONDVERSTATUS": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
+
+code "Essential hypertension (disorder) code": '59621000' from "SNOMED" display 'Essential hypertension (disorder)'
+code "Malignant hypertensive chronic kidney disease (disorder) code": '285831000119108' from "SNOMED" display 'Malignant hypertensive chronic kidney disease (disorder)'
+code "Condition Active code": 'active' from "CONDCLINSTATUS" display 'Active'
+code "Condition Confirmed code": 'confirmed' from "CONDVERSTATUS" display 'Confirmed'
+
+code "Fever (ICD-10)": 'R50.9' from "ICD-10-CM" display 'fever ICD-10'
+code "Fever (SNOMED)": '267036007' from "SNOMED" display 'fever SNOMED'
+code "Cough (ICD-10)": 'R05' from "ICD-10-CM" display 'cough ICD-10'
+code "Cough (SNOMED)": '49727002' from "SNOMED" display 'cough SNOMED'
+
+
+parameter "Measurement Period" Interval<DateTime>
+default Interval[@2020-11-11T00:00:00.0, @2020-12-12T00:00:00.0)  
+  
+context Patient
+
+define "AgeRange-old at end of Measurement Period":
+  AgeInYearsAt(end of "Measurement Period") between 60 and 110
+    
+define "AgeRange-middle at end of Measurement Period":
+  AgeInYearsAt(end of "Measurement Period") between 20 and 59
+    
+define "AgeRange-young at end of Measurement Period":
+  AgeInYearsAt(end of "Measurement Period") < 19   
+  
+  
+pat id 5342998
+source http://hapi.fhir.org/baseR4
+
+In command prompt
+
+C:\Users\Elisavet.PINGUINI>git clone https://github.com/DBCG/cql_runner.git
+Cloning into 'cql_runner'...
+remote: Enumerating objects: 959, done.
+remote: Counting objects: 100% (276/276), done.
+remote: Compressing objects: 100% (140/140), done.
+remote: Total 959 (delta 146), reused 253 (delta 129), pack-reused 683Receiving objects:  95% (912/959), 4.14 MiB | 8.26 MiB/s
+Receiving objects: 100% (959/959), 6.44 MiB | 10.20 MiB/s, done.
+Resolving deltas: 100% (506/506), done.
+
+C:\Users\Elisavet.PINGUINI>cd cql_runner
+
+C:\Users\Elisavet.PINGUINI\cql_runner>code .
+
+C:\Users\Elisavet.PINGUINI\cql_runner>
+  
+
