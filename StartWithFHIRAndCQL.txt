@@ -1,3 +1,5 @@
+This file explains how to use and configure Dataphoria CQL engine and some basics on the FHIR HAPI public server. It also includes useful resources and links.
+
 If you want to use Dataphoria CQL runner please follow:
 Go to: 
 https://cql-runner.dataphoria.org/
@@ -15,4 +17,13 @@ The rest of the fields leave blank.
 
 
 
+The server we use is the FHIR Hapi public server. link: https://hapi.fhir.org/home?serverId=home_r4&pretty=true&_summary=&resource=
+
+
+
+Useful links
+CQL syntax: https://cql.hl7.org/02-authorsguide.html#terminology
+HL7 FHIR: https://build.fhir.org/terminology-module.html
+FHIRHelpers Library: https://fhir.org/guides/cqf/common/Library-FHIRHelpers.html
+HL7 FHIR CQL, xml and JSON examples: https://build.fhir.org/library-examples.html
 
