@@ -1,3 +1,5 @@
+This file contains instructions on how to install VSCode and use it for CQL coding, as well as using Git and GitHub.
+
 If you want to use VSCode, please follow:
 
 Installing VSCode
