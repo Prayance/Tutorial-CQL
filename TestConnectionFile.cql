@@ -2,6 +2,7 @@
     This file provides one of the most basic functionalities in CQL.
     It define different age ranges and tells you which one your patient belongs to. i.e. returns true.
     Use this file to test your connection to the FHIR Hapi server on dataphoria CQL engine
+    You can use the other files and examples to familiarise with FHIR Hapi and CQL
 */
 library TestConnection version '1.0'
 using FHIR version '4.0.1' 
