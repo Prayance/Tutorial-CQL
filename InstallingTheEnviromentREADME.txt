@@ -1,3 +1,5 @@
+If you want to use VSCode, please follow:
+
 Installing VSCode
     Step 1
         Start by downloading the VSCode (free)
