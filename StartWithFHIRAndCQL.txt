@@ -26,4 +26,5 @@ CQL syntax: https://cql.hl7.org/02-authorsguide.html#terminology
 HL7 FHIR: https://build.fhir.org/terminology-module.html
 FHIRHelpers Library: https://fhir.org/guides/cqf/common/Library-FHIRHelpers.html
 HL7 FHIR CQL, xml and JSON examples: https://build.fhir.org/library-examples.html
+Code systems links: http://hl7.org/fhir/R4/terminologies-systems.html
 
