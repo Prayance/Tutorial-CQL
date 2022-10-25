@@ -1,0 +1,34 @@
+{
+    "resourceType": "Patient",
+    "id": "2881721",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2022-04-10T23:10:41.112+00:00",
+      "source": "#kLeZPqzVVvDGekv6"
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Sayo Michael <b>MAKINWA </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Address</td><td><span>Via Cambridge, 115 </span><br/><span>Roma </span><span>Roma </span></td></tr><tr><td>Date of birth</td><td><span>18 December 1992</span></td></tr></tbody></table></div>"
+    },
+    "name": [ {
+      "use": "official",
+      "family": "Makinwa",
+      "given": [ "Sayo", "Michael" ]
+    } ],
+    "telecom": [ {
+      "system": "phone",
+      "value": "+2348133100827",
+      "use": "mobile"
+    }, {
+      "system": "email",
+      "value": "s.makinwa@parallelscore.com"
+    } ],
+    "gender": "male",
+    "birthDate": "1992-12-18",
+    "address": [ {
+      "line": [ "Via Cambridge, 115" ],
+      "city": "Roma",
+      "state": "Roma",
+      "postalCode": "00133"
+    } ]
+  }
