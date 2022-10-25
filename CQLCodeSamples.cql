@@ -11,11 +11,15 @@ library myLibrary version '1'
 //All libraries and CQL expressions shall use FHIR based data models and you need to specify the version.
 using FHIR version '4.0.1'
 
-//FHIRHelpers is a common asset library details at: http://fhir.org/guides/cqf/common/Library-FHIRHelpers.html
+/*
+  FHIRHelpers is a common asset library details at: http://fhir.org/guides/cqf/common/Library-FHIRHelpers.html
+  If this does not work in dataphoria engine, remove the version and use 
+  include FHIRHelpers called FHIRHelpers
+*/
 include FHIRHelpers version '4.0.1' called FHIRHelpers
 
 /*
-    This example includes references to the snowmed ct and loinc codesystems.
+    This example includes references to some of the most common code systems, including Snowmedct and loinc.
     If you want to add a specific version you follow the syntax:
     codesystem "codesystemName": 'codesystemLink' version 'versionLink'
 */
@@ -35,7 +39,6 @@ valueset "Inactive Condition": 'http://fhir.org/guides/cqf/common/ValueSet/inact
     All direct codes in CQL MUST be a code from the code system (this case snowmed ct) and not a url
     I added some that may be helpful.
 */
-code "Body temperature": '8310-5' from "LOINC" display 'Body temperature'
 code "Birthdate": '21112-8' from "LOINC" display 'Birth date'
 code "Allergy to Felis catus protein": '1208807009' from "SNOMED" display 'Allergy to Felis catus protein'
 code "active": 'active' from "ConditionClinicalStatusCodes" display 'active'
@@ -74,9 +77,7 @@ define "period": Interval[@2022-01-01T00:00:00.0, @2022-10-10T00:00:00.0)
 //Print patient's gender
 define "gender": Patient.gender
 
-//check if a patient has a cat allergy
-define "hasActiveAllergy": 
-  exists(ActiveCondition([Condition: "Allergy to Felis catus protein"]))
+
 
 // The following 3 functions are showing all the relevant diagnosis, hospital admissions and lab tests of this patient
 define "Diagnosis":
@@ -88,18 +89,22 @@ define "Hospital admissions":
 define "Lab tests":
     [Observation]
 
-/*
-    The following functions define active, resolved and inactive conditions
-*/  
-define "Errors":
-  null
-      
-define function InactiveCondition(CondList List<Condition>):
-  CondList C where C.verificationStatus ~ "inactive"
+/********************************************************************************************************************
+*********************************************************************************************************************
+*******************Would you like to play with something before the hack day?****************************************
+*******************Use the lines of code bellow and find out if the person has a cat allergy or not******************
+*******************Why not making him have a cat allergy? ***********************************************************
+*********************************************************************************************************************
+********************************************************************************************************************* */
 
-define function ResolvedCondition(CondList List<Condition>):
-  CondList C where C.verificationStatus ~ "resolved"
-  
+//check if a patient has a cat allergy - This is a sample code that will not work with the patient we have. 
+define "hasActiveAllergy": 
+  exists(ActiveCondition([Condition: "Allergy to Felis catus protein"]))
+
+/*
+    This is a sample of declaring a function. 
+    The following function define active condition
+*/   
 define function ActiveCondition(CondList List<Condition>):
   CondList C
     where C.clinicalStatus ~ "active"
