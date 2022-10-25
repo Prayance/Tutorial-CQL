@@ -1,4 +1,15 @@
-This file explains how to use and configure Dataphoria CQL engine and some basics on the FHIR HAPI public server. It also includes useful resources and links.
+This file explains how to use and configure Dataphoria CQL engine and some basics on the FHIR HAPI public server. 
+It also includes useful resources and links.
+
+FHIR stands for Fast Health Interoperability Standards and it is a standard for interoperability released by HL7 aka to exchange data.
+In FHIR health data is represented as resources and exchanged through multiple paradigms, one of which is a RESTful server.
+
+CQL was initially developed as a quality indicator in US, outside of HL7 standards but soon was incorporated into HL7. 
+Identifying quality indicators involved into something that can be used for healthcare decision support. 
+In US there are a lot of defined sets of computable knowledge associated with CQL but are not part of it yet, around conditions and procedures that the US uses for monitoring. 
+We can develop those phenotypes and use them for decision support purposes rather than quality control purposes.
+
+
 
 If you want to use Dataphoria CQL runner please follow:
 Go to: 
@@ -27,4 +38,15 @@ HL7 FHIR: https://build.fhir.org/terminology-module.html
 FHIRHelpers Library: https://fhir.org/guides/cqf/common/Library-FHIRHelpers.html
 HL7 FHIR CQL, xml and JSON examples: https://build.fhir.org/library-examples.html
 Code systems links: http://hl7.org/fhir/R4/terminologies-systems.html
+Learn FHIR: https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/use-postman
 
+Fancy a step further? You can start by visiting: 
+https://github.com/cqframework/clinical_quality_language
+https://github.com/FirelyTeam/fhirstarters/tree/master/java/hapi-fhirstarters-client-skeleton/
+https://github.com/DBCG/cql-language-server
+https://code.visualstudio.com/docs
+https://docs.fire.ly/projects/Firely-NET-SDK/client/setup.html
+https://fire.ly/blog/make-your-first-fhir-client-within-one-hour/
+https://medblocks.org/2021-01-19-setting-up-vscode-for-fhir/
+https://medblocks.medium.com/setting-up-vscode-for-creating-fhir-resource-2cd5c101c548
+https://community.intersystems.com/post/simple-example-fhir-client-java
